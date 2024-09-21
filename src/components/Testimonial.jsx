@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const testimonials = [
   {
     name: "Robert A. Voltaire",
-    image: "/api/placeholder/150/150",
+    image: "https://runscope.com/static/img/public/customer-portrait-human-api.png",
     role: "Store link",
     rating: 5,
     feedback:
@@ -11,7 +11,7 @@ const testimonials = [
   },
   {
     name: "Quinten Barney",
-    image: "/api/placeholder/150/150",
+    image: "https://img.freepik.com/free-photo/attractive-mixed-race-male-with-positive-smile-shows-white-teeth-keeps-hands-stomach-being-high-spirit-wears-white-shirt-rejoices-positive-moments-life-people-emotions-concept_273609-15527.jpg",
     role: "Etsy Merchant",
     rating: 5,
     feedback:
@@ -19,7 +19,7 @@ const testimonials = [
   },
   {
     name: "Nikki",
-    image: "/api/placeholder/150/150",
+    image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?cs=srgb&dl=pexels-olly-774909.jpg&fm=jpg",
     role: "Store link",
     rating: 5,
     feedback:
@@ -57,7 +57,7 @@ const TestimonialCarousel = () => {
             <img
               src={testimonials[currentIndex].image}
               alt={testimonials[currentIndex].name}
-              className="w-20 h-20 rounded-full mr-6 border-4 border-green-400"
+              className="md:w-20 md:h-20 h-16 w-16 rounded-full mr-6 border-4 border-green-400"
             />
             <div>
               <h3 className="text-xl font-semibold text-gray-800">{testimonials[currentIndex].name}</h3>

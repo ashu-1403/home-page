@@ -1,330 +1,74 @@
-import React from "react";
+import React from 'react';
 
 const Footer = () => {
+  const footerSections = [
+    {
+      title: "Integrations",
+      items: ['Shopify', 'Etsy', 'eBay', 'Amazon', 'TikTok Shop', 'PrestaShop', 'BigCommerce', 'Wix', 'WooCommerce', 'Squarespace', 'Printify API', 'Printify Pop-Up', 'Shutterstock']
+    },
+    {
+      title: "Discover",
+      items: ['Blog', 'Guides', 'Products', 'Etsy print-on-demand', 'Shopify print-on-demand', 'Woocommerce print-on-demand', 'Wix print-on-demand', 'Squarespace print-on-demand', 'Make Your Own Shirt', 'Brands']
+    },
+    {
+      title: "Start selling",
+      items: ['Custom T-shirts', 'Custom Hoodies', 'Custom Mugs', 'Custom Socks', 'Custom Backpacks', 'Custom Branding', 'Sell on Etsy', 'Sell on Social Media', 'Free T-shirt Designs', 'Custom Products', 'Custom All-Over-Print Hoodies', 'Start a Clothing Line', 'Start POD Business', 'Bulk Orders', 'Transfering To Printify']
+    },
+    {
+      title: "Printify",
+      items: ['Print on Demand', 'Print Providers', 'Experts Program', 'Printify Express Delivery', 'Become a Partner', 'About', 'Printify Quality Promise', 'Jobs', 'Webinars', 'Printing Profits Podcast', 'Contact Us', 'Affiliate', 'Contact Sales', 'POD Glossary', 'Network Fulfillment Status', 'Merchant Protection']
+    }
+  ];
+
+  const socialIcons = [
+    { name: 'Facebook', src: "https://1000logos.net/wp-content/uploads/2017/02/Facebook-Logosu.png" },
+    { name: 'Instagram', src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" },
+    { name: 'LinkedIn', src: "https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" },
+    { name: 'Twitter', src: "https://www.shutterstock.com/image-vector/indonesia-9-january-2024-twitter-260nw-2410058195.jpg" },
+    { name: 'YouTube', src: "https://t3.ftcdn.net/jpg/04/74/05/94/360_F_474059464_qldYuzxaUWEwNTtYBJ44VN89ARuFktHW.jpg" },
+    { name: 'TikTok', src: "https://cdn.pixabay.com/photo/2021/06/15/12/28/tiktok-6338429_960_720.png" },
+    { name: 'Reddit', src: "https://www.reddiquette.com/wp-content/uploads/2020/09/What-Is-The-Reddit-Logo-Called.png" },
+  ];
+
   return (
-    <footer className="bg-white py-10 overflow-hidden">
-      <div className="flex  items-center  md:justify-center">
-        <img src="https://play-lh.googleusercontent.com/mNEe0pw6FpUqGUpeXaRC3yIBIOdsp9gqF1ppnu9B3t_LNHIVUZ0IxqHwvErVRLtXiQ" alt="Printify Logo" className=" mb-8 h-16 w-16 rounded-lg" />
-      </div>
-      <div className="container mx-auto md:ml-64 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
-        <div className="flex flex-col items-start justify-start">
-          <h3 className="font-semibold mb-4">Integrations</h3>
-          <ul className="space-y-2">
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Shopify
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Etsy
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                eBay
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Amazon
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                TikTok Shop
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                PrestaShop
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-green-600 hover:underline">
-                BigCommerce
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Wix
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                WooCommerce
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Squarespace
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Printify API
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Printify Pop-Up Store
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Shutterstock
-              </a>
-            </li>
-          </ul>
+    <footer className="bg-white py-8 min-h-screen flex items-center justify-center">
+      <div className="container mx-auto px-4 max-w-4xl">
+        {/* Logo */}
+        <div className="flex justify-center mb-6">
+          <img
+            src="https://play-lh.googleusercontent.com/mNEe0pw6FpUqGUpeXaRC3yIBIOdsp9gqF1ppnu9B3t_LNHIVUZ0IxqHwvErVRLtXiQ"
+            alt="Printify Logo"
+            className="h-8"
+          />
         </div>
 
-        <div className="flex flex-col items-start justify-start">
-          <h3 className="font-semibold mb-4">Discover</h3>
-          <ul className="space-y-2">
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Blog
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Guides
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Products
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Etsy print-on-demand
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Shopify print-on-demand
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                WooCommerce print-on-demand
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Wix print-on-demand
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Squarespace print-on-demand
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Make Your Own Shirt
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Brands
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Pricing
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Shipping Rates
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Mockup Generator
-              </a>
-            </li>
-          </ul>
+        <div className="flex justify-center space-x-4 mb-8">
+          {socialIcons.map((icon, index) => (
+            <a key={index} href="#" className="w-16 h-8 bg-green-500 rounded-full overflow-hidden md:h-16 md:w-16">
+              <img src={icon.src} alt={icon.name} className="w-full h-full object-cover" />
+            </a>
+          ))}
         </div>
 
-        <div className="flex flex-col items-start justify-start">
-          <h3 className="font-semibold mb-4">Start Selling</h3>
-          <ul className="space-y-2">
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Custom T-shirts
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Custom Hoodies
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Custom Mugs
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Custom Socks
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Custom Backpacks
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Custom Branding
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Sell on Etsy
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Sell on Social Media
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Free T-shirt Designs
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Custom Products
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Start a Clothing Line
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Start POD Business
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Bulk Orders
-              </a>
-            </li>
-          </ul>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+          {footerSections.map((section, index) => (
+            <div key={index}>
+              <h3 className="font-bold mb-4">{section.title}</h3>
+              <ul className="space-y-2">
+                {section.items.map((item, itemIndex) => (
+                  <li key={itemIndex}>
+                    <a 
+                      href="#" 
+                      className={`hover:underline ${item === 'Webinars' ? 'text-green-500' : 'text-gray-600 hover:text-green-500' }` }
+                    >
+                      {item}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
-
-        {/* Printify */}
-        <div className="flex flex-col items-start justify-start">
-          <h3 className="font-semibold mb-4">Printify</h3>
-          <ul className="space-y-2">
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Print on Demand
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Print Providers
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Experts Program
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Printify Express Delivery
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Become a Partner
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Printify Quality Promise
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Jobs
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Webinars
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Printing Profits Podcast
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Contact Us
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Affiliate
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Contact Sales
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                POD Glossary
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-green-600">
-                Network Fulfillment Status
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="container mx-auto mt-10 flex justify-center space-x-4">
-        <a
-          href="https://facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://static.vecteezy.com/system/resources/previews/018/910/719/non_2x/facebook-logo-facebook-icon-free-free-vector.jpg" alt="Facebook" className="w-6" />
-        </a>
-        <a
-          href="https://instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://cdn.shopify.com/s/files/1/0070/7032/files/image3_0f703790-cfa3-4e74-bcc1-fd3045ae9b0f.jpg?v=1668459281" alt="Instagram" className="w-10 mt-1" />
-        </a>
-        <a
-          href="https://pinterest.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://static.vecteezy.com/system/resources/previews/018/930/744/non_2x/pinterest-logo-pinterest-transparent-free-png.png" alt="Pinterest" className="w-6" />
-        </a>
       </div>
     </footer>
   );
