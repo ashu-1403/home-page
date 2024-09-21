@@ -20,7 +20,6 @@ const Navbar = () => {
           <span className="font-bold text-green-500 text-xl">Printify</span>
         </div>
 
-        {/* Hamburger Icon for Mobile */}
         <div className="md:hidden flex items-center ml-36">
           <button onClick={toggleMenu} className="text-gray-600 focus:outline-none">
             <svg
@@ -73,7 +72,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white py-2">
           <a href="/" className="block px-4 py-2 text-gray-600 hover:bg-gray-100 hover:text-green-500">
