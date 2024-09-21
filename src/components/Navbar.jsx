@@ -10,14 +10,13 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
-        {/* Logo */}
         <div className="flex items-center space-x-2">
           <img
             src="https://play-lh.googleusercontent.com/mNEe0pw6FpUqGUpeXaRC3yIBIOdsp9gqF1ppnu9B3t_LNHIVUZ0IxqHwvErVRLtXiQ" 
             alt="Logo"
             className="w-8 h-8"
           />
-          <span className="font-bold text-green-500 text-xl">Printify</span>
+          <span className="font-bold text-green-500 text-3xl">Printify</span>
         </div>
 
         <div className="md:hidden flex items-center ml-36">
