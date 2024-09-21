@@ -32,19 +32,20 @@ const Footer = () => {
 
   return (
     <footer className="bg-white py-8 min-h-screen flex items-center justify-center">
-      <div className="container mx-auto px-4 max-w-4xl">
-        {/* Logo */}
-        <div className="flex justify-center mb-6">
+      <div className="container mx-auto px-4 max-w-6xl">
+        {/* Logo and Name */}
+        <div className="flex justify-center items-center mb-6 space-x-2">
           <img
             src="https://play-lh.googleusercontent.com/mNEe0pw6FpUqGUpeXaRC3yIBIOdsp9gqF1ppnu9B3t_LNHIVUZ0IxqHwvErVRLtXiQ"
             alt="Printify Logo"
-            className="h-8"
+            className="h-8 md:h-10"
           />
+          <h2 className="text-2xl md:text-3xl font-bold text-green-500">Printify</h2>
         </div>
 
         <div className="flex justify-center space-x-4 mb-8">
           {socialIcons.map((icon, index) => (
-            <a key={index} href="#" className="w-16 h-8 bg-green-500 rounded-full overflow-hidden md:h-16 md:w-16">
+            <a key={index} href="#" className="w-8 h-8 bg-green-500 rounded-full overflow-hidden md:h-10 md:w-10">
               <img src={icon.src} alt={icon.name} className="w-full h-full object-cover" />
             </a>
           ))}
@@ -57,9 +58,9 @@ const Footer = () => {
               <ul className="space-y-2">
                 {section.items.map((item, itemIndex) => (
                   <li key={itemIndex}>
-                    <a 
-                      href="#" 
-                      className={`hover:underline ${item === 'Webinars' ? 'text-green-500' : 'text-gray-600 hover:text-green-500' }` }
+                    <a
+                      href="#"
+                      className={`hover:underline ${item === 'Webinars' ? 'text-green-500' : 'text-gray-600 hover:text-green-500'}`}
                     >
                       {item}
                     </a>
