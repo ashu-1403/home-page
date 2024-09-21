@@ -38,9 +38,9 @@ const Footer = () => {
           <img
             src="https://play-lh.googleusercontent.com/mNEe0pw6FpUqGUpeXaRC3yIBIOdsp9gqF1ppnu9B3t_LNHIVUZ0IxqHwvErVRLtXiQ"
             alt="Printify Logo"
-            className="h-8 md:h-10"
+            className="h-8 md:h-10 mb-10"
           />
-          <h2 className="text-2xl md:text-3xl font-bold text-green-500">Printify</h2>
+          <h2 className="text-2xl md:text-3xl mb-12 font-bold text-green-500">Printify</h2>
         </div>
 
         <div className="flex justify-center space-x-4 mb-8">
